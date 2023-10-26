@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --rgba:rgba(18, 15, 15, 0.918);
+}
+header{
+    width: 100%;
+    height: auto;
+    float: left;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    z-index: 20;
+    background-color: black;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.my-menu{
+    width: 90%;
+    height: 61.5px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    width: 80%;
+}
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu ul li{
+    float: left;
+    position: relative;
+}
+.menu ul li a{
+    display: block;
+    padding-left:60px;
+    padding-right: 60px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: content;
+    font-size: 20px;
+}
+.menu ul li a:hover{
+    background-color: rgba(81, 69, 69, 0.607);
+}
+.sub-menu{
+    display: none;
+}
+.menu ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: brown;
+    margin-top: 2px;
+}
+.menu ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+.menu ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 5px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+}
+.search{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span i{
+    font-size: 20px;
+    color: #fff;
+}
+main{
+    width: 99%;
+    height: 1600px;/* ពេលសរសេរអាចដាក់ height: auto; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 65px auto;
+    background-color: var(--rgba);
+}
+
+
